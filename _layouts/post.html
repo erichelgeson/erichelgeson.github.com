@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html>
+    {% include head.html %}
+    <body>
+        {% include nav.html %}
+        <div class="container">
+            <div class="content post eleven columns">
+                <div class="post-header eleven columns">
+                    <h1 class="post-title eleven columns">{{ page.title }}</h1>
+                    <time class="post-time eleven columns" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+                </div>
+                <div class="post-body eleven columns">
+                    <div class="post-body-inner eleven columns">
+                        {{ content }}
+                        <div class="page-navigation">
+                            {% for post in site.categories.blog %}
+                                {% if post.url == page.url %}
+                                    {% assign post_index0 = forloop.index0 %}
+                                    {% assign post_index1 = forloop.index %}
+                                {% endif %}
+                            {% endfor %}
+                            {% for post in site.categories.blog %}
+                                {% if post_index0 == forloop.index %}
+                                    {% assign next_post = post.url %}
+                                    {% assign next_post_title = post.title %}
+                                {% endif %}
+                                {% if post_index1 == forloop.index0 %}
+                                    {% assign prev_post = post.url %}
+                                    {% assign prev_post_title = post.title %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if prev_post %}
+                                <a class="previous links" href="{{ prev_post }}" alt="{{ prev_post_title }}" title="{{ prev_post_title }}">« Previous</a> 
+                            {% endif %}
+                            {% if next_post %}
+                                <a class="next links" href="{{ next_post }}" alt="{{ next_post_title }}" title="{{ next_post_title }}">Next »</a> 
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sixteen columns">
+                {% include footer.html %}
+            </div>
+        </div>
+    </body>
+</html>

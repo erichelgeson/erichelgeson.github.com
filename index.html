@@ -1,1 +1,21 @@
-My GitHub Page
+---
+layout: default
+title: Eric Helgeson - Blog
+---
+<div id="home-avatar" class="six columns">
+    <img id="avatar" src="/static/images/circle_avatar.png" alt="Hi, I'm Eric." title="Hi, I'm Eric.">
+</div>
+<div id="home-content" class="content ten columns"> 
+    <h1>Hi, I'm Eric.</h1>
+    <br />
+    <p>A software developer.</p>
+    <p>more here...</p>
+</div>
+<div id="latest" class="content sixteen columns">
+    {% for page in site.categories.blog limit:1 %}
+        <h2><a href="{{ page.url }}">Latest blog post</a></h2>
+        <br />
+        <a href="{{ page.url }}" class="links" alt="{{ page.title }}" title="{{ page.title }}">{{ page.title }}</a>&nbsp;&nbsp;•&nbsp;&nbsp;<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+        <p>{{ page.excerpt }}</p>
+    {% endfor %}
+</div>

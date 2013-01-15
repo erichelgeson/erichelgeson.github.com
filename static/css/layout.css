@@ -1,0 +1,466 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+h1 {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 3.6rem;
+	font-weight: bold;
+	color: #000;
+	text-rendering: optimizeLegibility;
+}
+
+h2 {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 3.1rem;
+	font-weight: bold;
+	color: #000;
+	text-rendering: optimizeLegibility;
+}
+
+h3 {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 2.6rem;
+	font-weight: bold;
+	color: #000;
+	text-rendering: optimizeLegibility;
+}
+
+h4 {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 2.1rem;
+	font-weight: bold;
+	color: #000;
+	text-rendering: optimizeLegibility;
+}
+
+h5 {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #000;
+	text-rendering: optimizeLegibility;
+}
+
+h6 {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #000;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+	padding: 10px;
+	margin: 0;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	overflow: auto;
+	font-size: 13px;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+.highlight {
+	margin-bottom: 20px;
+}
+
+.nav-container {
+    margin-top: 50px;
+    border-bottom: 1px solid #CCC;
+    font-family: ratio, Arial, Verdana, sans-serif;
+}
+ 
+#logo-primary {
+	margin: 0;
+}
+
+#nav-primary ul {
+	position: relative;
+	float: right;
+	right: -50px;
+}
+
+#nav-primary ul li {
+    display: inline;
+    margin: 0 20px 0 0;
+    margin-bottom: 130px;
+}
+
+.content {
+	margin: 50px 0;
+	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-size: 16px;
+}
+
+.links {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+p a {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+.footer {
+	padding: 20px 0 40px;
+	overflow: hidden;
+	border-top: 1px solid #CCC;
+    font-family: ratio, Arial, Verdana, sans-serif;
+    width: 100%;
+}
+
+.back-to-top {
+	width: 30%;
+	position: relative;
+	float: left;
+}
+
+.offsite-links {
+	width: 70%;
+	position: relative;
+	float: right;
+	text-align: right;
+}
+
+/* #Page Styles
+================================================== */
+#home-avatar {
+	position: relative;
+	right: 38px;
+}
+
+#home-content {
+	position: relative;
+	right: -10px;
+}
+
+#latest {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.about, .post {
+	position: relative;
+	left: 130px;
+}
+.post-body, .about-body {
+	position: relative;
+	width: 100%;
+}
+
+.post-list-body {
+	margin-bottom: -40px;
+}
+
+.post-list-item {
+	position: relative;
+	left: 140px;
+}
+
+.post-body-inner, .about-body-inner {
+	position: relative;
+	margin: 0 auto;
+	max-width: 640px;
+	padding: 30px 0 0;
+}
+
+.post-body-inner h1, h3, h4, h5, h6 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+p code, ul code {
+    border: 1px solid #ddd;
+    background-color: #333;
+    font-size: 85%;
+    color: #fff;
+    padding: 0.05em .2em;
+	font-family: monospace;
+}
+
+pre.terminal {
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+}
+
+pre.terminal code {
+    background-color: #333;
+}
+
+.post-header-inner {
+	position: relative;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+}
+
+.post-title, .post-time, .about-title, .about-subtitle {
+	width: 100%;
+	text-align: center;
+}
+
+.post-time {
+	display: block;
+}
+
+.post-body-inner ul {
+	list-style: disc;
+}
+
+.about-title, .about-subtitle {
+	position: relative;
+	left: 10px;
+}
+
+.about-header, .post-time {
+	position: relative;
+	right: 10px;
+}
+
+.about-img {
+	margin-bottom: 20px;
+}
+
+.about-image {
+	width: 100%;
+}
+
+.image-subtitles {
+	font-family: chaparral-pro, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	font-weight: bold;
+}
+
+.previous {
+	float: left;
+}
+
+.next {
+	float: right;
+}
+
+.img-404 {
+	position: relative;
+	left: 170px;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		.post-list-title, .post-list-time, .post-list-item {
+			float: none;
+			width: auto;
+			margin-left: 0;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	/* iPad */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#nav,
+		#logo-primary,
+		#nav-primary,
+		#avatar,
+		#latest,
+		.footer,
+		.back-to-top,
+		.offsite-links {
+			width: 90%;
+		}
+		#home-avatar {
+			top: 60px;
+			left: 20px;
+		}
+		#home-content{
+			width: 55%;
+		}
+		#nav-primary ul {
+   			position: relative;
+			float: right;
+			right: -80px;
+			bottom: 39px;
+			margin-bottom: -20px;
+		}
+		#latest {
+			position: relative;
+			left: 30px;
+			top: -40px;
+			margin-bottom: -20px;
+		}
+		.back-to-top {
+			width: 30%;
+		}
+		.offsite-links {
+			width: 60%;
+		}
+		.post-list-title, .post-list-time, .post-list-item {
+			float: none;
+			width: 80%;
+			margin-left: 0;
+		}
+		.about, .post {
+			position: relative;
+			left: 120px;
+		}
+		.img-404 {
+			position: relative;
+			left: 81px;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.about, .post {
+			position: relative;
+			left: 0;
+			top: 20px;
+			padding-bottom: 20px;
+		}
+		.post-body {
+			bottom: 20px;
+		}
+		.img-404 {
+			position: relative;
+			left: 0;
+			padding-bottom: 20px;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#logo-primary,
+		#nav-primary,
+		#avatar,
+		.back-to-top,
+		.offsite-links {
+			width: 80%;
+		}
+		#home-avatar {
+			left: 30px;
+		}
+		#nav-primary ul {
+   			position: relative;
+			float: right;
+			right: -105px;
+			bottom: 39px;
+			margin-bottom: -20px;
+		}
+		#latest {
+			width: 95%;
+			position: relative;
+			left: 10px;
+			padding-bottom: 30px;
+			margin-bottom: -20px;
+		}
+		.back-to-top {
+			width: 30%;
+		}
+		.offsite-links {
+			width: 50%;
+		}
+		.post-list-title, .post-list-time, .post-list-item {
+			float: none;
+			width: auto;
+			margin-left: 0;
+			top: 20px;
+			left: 0;
+		}
+		.post-body {
+			bottom: 20px;
+		}
+		.about, .post {
+			position: relative;
+			left: 0;
+			top: 20px;
+			padding-bottom: 20px;
+		}
+		.img-404 {
+			position: relative;
+			left: 58px;
+			padding-bottom: 20px;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#home-content,
+		#latest {
+			width: 90%;
+		}
+		#logo-primary,
+		#avatar,
+		.back-to-top,
+		.offsite-links {
+			width: 80%;
+		}
+		#home-avatar {
+			left: 30px;
+		}
+		#nav-primary ul {
+   			position: relative;
+   			right: 60px;
+   			top: 5px;
+		}
+		#latest {
+			position: relative;
+			left: 10px;
+		}
+		.back-to-top {
+			width: 30%;
+		}
+		.offsite-links {
+			width: 60%;
+		}
+		.post-list-title, .post-list-time, .post-list-item {
+			float: none;
+			width: auto;
+			margin-left: 0;
+			top: 20px;
+			left: 0;
+		}
+	}
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
