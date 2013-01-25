@@ -16,6 +16,9 @@
                 <div class="post-body eleven columns">
                     <div class="post-body-inner eleven columns">
                         {{ content }}
+
+<p>Want to contribute to this article? <a href="https://github.com/erichelgeson/erichelgeson.github.com/blob/master/_posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.url | replace_first: "/", ""  }}.md">Edit this post on Github!</a></p>
+
                         <div class="page-navigation">
                             {% for post in site.categories.blog %}
                                 {% if post.url == page.url %}
