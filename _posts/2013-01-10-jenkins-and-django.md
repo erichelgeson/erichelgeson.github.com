@@ -20,7 +20,7 @@ Requirements
 <li>Jenkins Plugins</li>
 <li>Cobertura</li>
 <li>Github</li>
-<li>virtualenv & pip</li>
+<li>virtualenv and pip</li>
 <li>django-jenkins</li>
 <li>git</li>
 </ul>
@@ -35,7 +35,7 @@ venv/bin/python manage.py jenkins core reports
 Publish config -
 coberturaReportFile = reports/coverage.xml
 
-Junit Results - reports/TEST-*.xml, reports/junit.xml
+Junit Results - reports/TEST-\*.xml, reports/junit.xml
 
 Ref
 ===
