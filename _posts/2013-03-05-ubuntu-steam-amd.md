@@ -5,18 +5,18 @@ excerpt: Get steam working on Ubuntu 12.10 with AMD. No frills just what to do.
 category: blog
 ---
 
-There’s a lot of information that comes up when you search for running Steam on Ubuntu. A lot of it is old, doesn’t work anymore, or tries to be so generic it covers every case. Well, i’ll have none of that. This post works for me, and maybe you, but not for everyone. This should take you 20 min, instead of the 3 hours it took me trying things.
+There's a lot of information that comes up when you search for running Steam on Ubuntu. A lot of it is old, doesn't work anymore, or tries to be so generic it covers every case. Well, i'll have none of that. This post works for me, and maybe you, but not for everyone. This should take you 20 min, instead of the 3 hours it took me trying things.
 
 My setup:
 * Ubuntu 12.10 64bit
-* 2x ATI 5830’s in CrossFire (should apply to any modern ATI cards)
+* 2x ATI 5830's in CrossFire (should apply to any modern ATI cards)
 
 Keep it simple:
 
-1. Grab Steam (it wasn’t in the software center for me) [http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz](http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz)
+1. Grab Steam (it wasn't in the software center for me) [http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz](http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz)
 
 2. ATI Drivers
-Just get the latest Beta, the ones in Ubuntu’s proprietary and proprietary-updates are too old, and you won’t have a good time. 13.2-beta7 was the lastest at the time I installed, find the latest here: 
+Just get the latest Beta, the ones in Ubuntu's proprietary and proprietary-updates are too old, and you won't have a good time. 13.2-beta7 was the lastest at the time I installed, find the latest here: 
 [http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx](http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx)
 
 Follow the guide below\[1\], but the jist is:
@@ -82,14 +82,14 @@ DRIVER=/usr/lib/fglrx/xorg/modules/drivers/fglrx_drv.so
 echo "Come on AMD!"
 for token in $DRIVER; do
     echo "Removing AMD logo from "$token
-    for x in $(objdump -d $DRIVER|awk '/call/&&/EnableLogo/{print "\\x"$2"\\x"$3"\\x"$4"\\x"$5"\\x"$6}'); do
+    for x in $(objdump -d $DRIVER|awk '/call/&amp;&amp;/EnableLogo/{print "\\x"$2"\\x"$3"\\x"$4"\\x"$5"\\x"$6}'); do
         sed -i "s/$x/\x90\x90\x90\x90\x90/g" $DRIVER
     done
 done
 echo "Reboot computer to finish"
 </pre>
 
-Also with the beta7 I do get artifacts very minor artifacts on the desktop while not playing games. I’ll live with it.
+Also with the beta7 I do get artifacts very minor artifacts on the desktop while not playing games. I'll live with it.
 
 Something change or need to be updated? FORK THIS POST! See link below to fork and send a pull request.
 
