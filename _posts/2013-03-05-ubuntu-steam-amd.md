@@ -54,7 +54,7 @@ $ sudo dpkg -i fglrx-dev*.deb
 
 ##### Configure:
 <pre>
-$ sudo amdconfig --initial -f
+$ sudo aticonfig --initial -f
 $ reboot
 </pre>
 
