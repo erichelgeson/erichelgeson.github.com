@@ -13,70 +13,65 @@ My setup:
 
 Keep it simple:
 
-1. Grab Steam (it wasn't in the software center for me) [http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz](http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz)
+1. Grab Steam (it wasn't in the software center for me) <http://repo.steampowered.com/steam/archive/precise/steam_latest.tar.gz>
 
 2. ATI Drivers
 Just get the latest Beta, the ones in Ubuntu's proprietary and proprietary-updates are too old, and you won't have a good time. 13.2-beta7 was the lastest at the time I installed, find the latest here: 
-[http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx](http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx)
+<http://support.amd.com/us/gpudownload/linux/Pages/radeon_linux.aspx>
 
 Follow the guide below\[1\], but the jist is:
 ##### Get Deps: 
-<pre>
+{% highlight bash %}
 $ sudo apt-get install build-essential cdbs dh-make dkms execstack dh-modaliases linux-headers-generic fakeroot
-</pre>
+{% endhighlight %}
 
 You're on 64bit too, so get the 32bit libs
-<pre>$ sudo apt-get install lib32gcc1
-</pre>
-
+{% highlight bash %}
+$ sudo apt-get install lib32gcc1
+{% endhighlight %}
 
 ##### Get Drivers:
-<pre>
+{% highlight bash %}
 $ wget http://www2.ati.com/drivers/beta/amd-driver-installer-catalyst-13.2-beta7-linux-x86.x86_64.zip
 $ unzip amd-driver-installer-catalyst-13.2-beta7-linux-x86.x86_64.zip
 $ chmod +x amd-driver-installer-catalyst-13.2-beta7-linux-x86.x86_64.run
-</pre>
+{% endhighlight %}
 
 
 ##### Build Drivers:
-<pre>
+{% highlight bash %}
 $ sudo sh ./amd-driver-installer-catalyst-13.2-beta7-linux-x86.x86_64.run --buildpkg Ubuntu/quantal
-</pre>
-
+{% endhighlight %}
 
 ##### Install (order matters):
-<pre>
+{% highlight bash %}
 $ sudo dpkg -i fglrx_*.deb
 $ sudo dpkg -i fglrx-amdcccle*.deb 
 $ sudo dpkg -i fglrx-dev*.deb
-</pre>
-
+{% endhighlight %}
 
 ##### Configure:
-<pre>
+{% highlight bash %}
 $ sudo aticonfig --initial -f
 $ reboot
-</pre>
-
+{% endhighlight %}
 
 ##### Test!
-<pre>
+{% highlight bash %}
 $ fglrxinfo
 $ fgl_glxgears
 # OOOO PURDY, Play Steam games now.
-</pre>
-
+{% endhighlight %}
 
 ##### I messed up and want to go back!
-<pre>
+{% highlight bash %}
 $ sudo apt-get remove --purge fglrx fglrx_* fglrx-amdcccle* fglrx-dev*
 $ reboot
-</pre>
+{% endhighlight %}
 
 #####Other
 AMD adds a watermark on their experimental drivers, this is slightly annoying and can be removed fairly easily\[2\]:
-
-<pre>
+{% highlight bash %}
 #!/bin/sh
 DRIVER=/usr/lib/fglrx/xorg/modules/drivers/fglrx_drv.so
 echo "Come on AMD!"
@@ -87,13 +82,13 @@ for token in $DRIVER; do
     done
 done
 echo "Reboot computer to finish"
-</pre>
+{% endhighlight %}
 
 Also with the beta7 I do get artifacts very minor artifacts on the desktop while not playing games. I'll live with it.
 
 Something change or need to be updated? FORK THIS POST! See link below to fork and send a pull request.
 
-\[1\] [http://wiki.cchtml.com/index.php/Ubuntu_Quantal_Installation_Guide#Installing_Catalyst_Manually_.28from_AMD.2FATI.27s_site.29_BETA.2FEXPERIMENTAL](http://wiki.cchtml.com/index.php/Ubuntu_Quantal_Installation_Guide#Installing_Catalyst_Manually_.28from_AMD.2FATI.27s_site.29_BETA.2FEXPERIMENTAL)
+\[1\] [http://wiki.cchtml.com/index.php/Ubuntu\_Quantal\_Installation\_Guide#Installing\_Catalyst\_Manually\_.28from\_AMD.2FATI.27s\_site.29\_BETA.2FEXPERIMENTAL](http://wiki.cchtml.com/index.php/Ubuntu_Quantal_Installation_Guide#Installing_Catalyst_Manually_.28from_AMD.2FATI.27s_site.29_BETA.2FEXPERIMENTAL)
 
 \[2\] [http://askubuntu.com/questions/206558/how-to-remove-the-amd-testing-use-only-watermark](http://askubuntu.com/questions/206558/how-to-remove-the-amd-testing-use-only-watermark)
 

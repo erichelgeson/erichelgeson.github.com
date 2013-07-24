@@ -15,27 +15,30 @@ I'm writing this because the information I found was scattered about, wanted to 
 See references below.
 
 Requirements
-<ul>
-<li>Jenkins</li>
-<li>Jenkins Plugins</li>
-<li>Cobertura</li>
-<li>Github</li>
-<li>virtualenv and pip</li>
-<li>django-jenkins</li>
-<li>git</li>
-</ul>
+* Jenkins
+* Jenkins Plugins
+* Cobertura
+* Github
+* virtualenv and pip
+* django-jenkins
+* git
 
 Jenkins job config -
-<pre class="terminal"><code>export DATABASE_URL="sqlite:////tmp/db.sqlite"
+{% highlight bash %}
+export DATABASE\_URL="sqlite:////tmp/db.sqlite"
 virtualenv venv
 venv/bin/pip install -r requirements.txt
 venv/bin/python manage.py jenkins core reports
-</code></pre>
+{% endhighlight %}
+
 
 Publish config -
-coberturaReportFile = reports/coverage.xml
 
-Junit Results - reports/TEST-\*.xml, reports/junit.xml
+* coberturaReportFile = reports/coverage.xml
+
+Junit Results - 
+
+* reports/TEST-\*.xml, reports/junit.xml
 
 Ref
 ===

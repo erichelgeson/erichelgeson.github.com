@@ -13,19 +13,21 @@ Say you want to run a loop to do something with some input, and you want to make
 
 To test this we can make the loop, but instead of running the command, echo out the command:
 
-<pre><code style="shell">$ for i in {1..10}; do for n in {1..10}; do echo 'mkdir -p $i/$n'; done ; done
+{% highlight bash %}
+$ for i in {1..10}; do for n in {1..10}; do echo 'mkdir -p $i/$n'; done ; done
 mkdir -p 1/1
 mkdir -p 1/2
 ...
 mkdir -p 10/9
 mkdir -p 10/10
 $
-</code></pre>
+{% endhighlight %}
 
 Great, that's the 100 commands we wanted to run printed to the screen. Now here's the trick, instead of editing out the echo command just pipe it through your shell:
 
-<pre><code style="shell">$ for i in {1..10}; do for n in {1..10}; do echo 'mkdir -p $i/$n'; done ; done | bash
+{% highlight bash %}
+$ for i in {1..10}; do for n in {1..10}; do echo 'mkdir -p $i/$n'; done ; done | bash
 $
-</code></pre>
+{% endhighlight %}
 
 Volla! You've just created 100 dirs.
