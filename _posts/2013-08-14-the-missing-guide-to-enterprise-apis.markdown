@@ -5,9 +5,9 @@ excerpt: Tips, tricks, and gotchas from building "Enterprise" APIs
 category: blog
 ---
 
-Building an Enterprise API is much different than how startups build APIs. They have legacy systems, many SaaS vendors that store data, and data in multiple locations with multiple sources of truth. Such is the growth of any big company who is entering the API world. 
+Building an Enterprise API is much different than how startups build APIs. Enterprises have legacy systems, many SaaS vendors that store data, and data in multiple locations with multiple sources of truth. Such is the growth of any big company who is entering the API world. 
 
-But Ive never seen tips, tricks or tutorials on how to deal with these real problems. You usually just see a .ppt file from the sales guy with box that says facade. Here are a few and I hope readers of this post can add more to it.
+Though I've never seen tips, tricks or tutorials on how to deal with these real problems. You usually just see a .ppt file from the sales guy with box that says facade. Here are a few and I hope readers of this post can add more to it.
 
 **Strip all but the headers needed when sending a request to a backend.**
 
