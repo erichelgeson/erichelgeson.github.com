@@ -85,6 +85,8 @@ You may be asking why don't I switch ISPs? Well they are the only one besides a 
 
 ISP's ask you to not do crummy things on their networks, so how about they don't do the same to their customers?
 
+**Edit**: Discuss on HN <https://news.ycombinator.com/item?id=6992897>
+
 **Notes**
 
 [1] - <http://superuser.com/questions/652995/why-does-my-browser-try-to-open-ads-from-fwdsnp-com>
