@@ -87,6 +87,10 @@ ISP's ask you to not do crummy things on their networks, so how about they don't
 
 **Edit**: Discuss on HN <https://news.ycombinator.com/item?id=6992897>
 
+**Edit2**: Discuss on reddit <https://pay.reddit.com/r/technology/comments/1u4b49/i_fought_my_isps_bad_behavior_and_won/>
+
+on twitter <https://twitter.com/nulleric/status/418126920404848640>
+
 **Notes**
 
 [1] - <http://superuser.com/questions/652995/why-does-my-browser-try-to-open-ads-from-fwdsnp-com>
