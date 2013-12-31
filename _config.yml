@@ -8,7 +8,7 @@ google_analytics: UA-37860645-1 # set tracking, remove from /javascripts/basic.j
 
 links:
   - name:         About
-    url:          /about/
+    url:          /about
   - name:         Blog
     url:          /
   - name:         Email
