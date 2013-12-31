@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about
 ---
 
 Eirc Helgeson is an arcitect, developer, ops person who lives in Minnesota.
