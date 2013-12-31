@@ -1,85 +1,33 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <html>
+  <head>
+    <meta content='{{ page.title }} - {{ site.title }}' property='og:title' />
+    <title>{{ page.title }} - {{ site.title }}</title>
     {% include head.html %}
-    <body>
-        {% include nav.html %}
-        <div class="container">
-            <div class="content post eleven columns">
-                <div class="post-header eleven columns">
-                    <h1 class="post-title eleven columns">{{ page.title }}</h1>
-                    <time class="post-time eleven columns" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
-                </div>
-                <div class="post-body eleven columns">
-                    <div class="post-body-inner eleven columns">
-                        {{ content }}
-
-<p>Want to contribute to this article? <a href="https://github.com/erichelgeson/erichelgeson.github.com/blob/master/_posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.url | replace_first: "/", ""  }}.markdown">Edit this post on Github!</a></p>
-
-<!-- Social -->
-<p><g:plusone size="medium"></g:plusone>
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="nulleric">Tweet</a>
-<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js?url=http://erichelgeson.github.com{{ page.url }}&newwindow=1"></script>
-</p>
-
-                        <div class="page-navigation">
-                            {% for post in site.categories.blog %}
-                                {% if post.url == page.url %}
-                                    {% assign post_index0 = forloop.index0 %}
-                                    {% assign post_index1 = forloop.index %}
-                                {% endif %}
-                            {% endfor %}
-                            {% for post in site.categories.blog %}
-                                {% if post_index0 == forloop.index %}
-                                    {% assign next_post = post.url %}
-                                    {% assign next_post_title = post.title %}
-                                {% endif %}
-                                {% if post_index1 == forloop.index0 %}
-                                    {% assign prev_post = post.url %}
-                                    {% assign prev_post_title = post.title %}
-                                {% endif %}
-                            {% endfor %}
-                            {% if prev_post %}
-                                <a class="previous links" href="{{ prev_post }}" alt="{{ prev_post_title }}" title="{{ prev_post_title }}">« Previous</a> 
-                            {% endif %}
-                            {% if next_post %}
-                                <a class="next links" href="{{ next_post }}" alt="{{ next_post_title }}" title="{{ next_post_title }}">Next »</a> 
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'erichelgesonblog'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </div>
-            <div class="sixteen columns">
-                {% include footer.html %}
-            </div>
-        </div>
-<!-- Scripts start -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<!-- Twitter -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    </body>
+  </head>
+  <body>
+    {% include header.html %}
+    <div id='container'>
+      {% include links.html %}
+      {% include pages.html %}
+      <div class="content">
+        <section class='post'>
+          <h1 class="upcase">
+            <div class='date'>{{ page.date | date_to_string }}</div>
+            {{ page.title }}
+          </h1>
+          {{ content }}
+          <p>--</p>
+          <p>Want to contribute to this article? <a href="https://github.com/erichelgeson/erichelgeson.github.com/blob/master/_posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | replace: " ", "-" | downcase }}.markdown">Edit this post on Github!</a></p>
+        </section>
+      </div>
+      {% if page.disqus == 'y' %}
+        {% include disqus.html %}
+      {% elsif page.disqus == 'n' %}
+      {% else %}
+        {% include disqus.html %}
+      {% endif %}
+      {% include links.html %}
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
