@@ -52,7 +52,9 @@ I was disheartened at their response. If they wanted to continue to do this and 
 
 Then I had an idea. This practice can't be viewed as legitimate affiliate traffic for the retailers! I could contact them directly and see if they'd take action.
 
-I contacted two major retailers affiliate programs and gave them the logs and a description of what happened. They quickly responded and indicated they'd take action right away. I can confirm as of last week that from the top 1000 Alexa list, no DNS record are being hijacked anymore[2].
+I contacted two major retailers affiliate programs and gave them the logs and a description of what happened. They quickly responded and indicated they'd take action right away. 
+
+**I can confirm as of last week that from the top 1000 Alexa list, no DNS record are being hijacked anymore![2]**
 
 If you are a retailer or have an affiliate program
 An easy way to find out if you're being taken advantage of in the same way is if you see a Referrer header with proxy.fwdsnp.com in it.
