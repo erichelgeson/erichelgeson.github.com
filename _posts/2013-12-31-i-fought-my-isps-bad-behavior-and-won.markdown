@@ -98,7 +98,7 @@ on twitter <https://twitter.com/nulleric/status/418126920404848640>
 **Notes**
 
 [1] - <http://superuser.com/questions/652995/why-does-my-browser-try-to-open-ads-from-fwdsnp-com>
-[2] - Script I used to to compare the top 1000 sites, requires curl compiled with ares (port install `curl +ares on macports`) for using different dns-servers.
+[2] - Script I used to to compare the top 1000 sites, requires curl compiled with ares (`port install curl +ares` on macports) for using different dns-servers.
 {% highlight bash %}
 for i in `head -n 1000 top-1m.csv | cut -f2 -d,`; do 
   echo "Site: $i"; 
