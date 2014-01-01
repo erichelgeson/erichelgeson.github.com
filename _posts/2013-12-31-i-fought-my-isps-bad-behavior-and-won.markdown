@@ -93,6 +93,8 @@ ISP's ask you to not do crummy things on their networks, so how about they don't
 
 on twitter <https://twitter.com/nulleric/status/418126920404848640>
 
+**Edit3**: Discuss on slashdot <http://news.slashdot.org/story/14/01/01/0021217/how-one-man-fought-his-isps-bad-behavior-and-won>
+
 **Notes**
 
 [1] - <http://superuser.com/questions/652995/why-does-my-browser-try-to-open-ads-from-fwdsnp-com>
