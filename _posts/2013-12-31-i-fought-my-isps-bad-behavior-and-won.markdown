@@ -99,7 +99,7 @@ on twitter <https://twitter.com/nulleric/status/418126920404848640>
 
 [1] - <http://superuser.com/questions/652995/why-does-my-browser-try-to-open-ads-from-fwdsnp-com>
 
-[2] - Script I used to to compare the top 1000 sites, requires curl compiled with ares (`port install curl +ares` on macports) for using different dns-servers.
+[2] - Script I used to to compare the top 1000 sites, requires curl compiled with ares, which is included in MacOS 10.9 or you can use `port install curl +ares` on macports for using different dns-servers.
 
 Get `the-1m.csv` from Alexa <http://www.alexa.com/topsites> (right hand side of page)
 
