@@ -95,6 +95,8 @@ on twitter <https://twitter.com/nulleric/status/418126920404848640>
 
 **Edit3**: Discuss on slashdot <http://news.slashdot.org/story/14/01/01/0021217/how-one-man-fought-his-isps-bad-behavior-and-won>
 
+**Edit4**: I've put up a seperate collaberative post taking the best information from all of the discussions and put them into one place. Feel free to add your own content as well: <http://erichelgeson.github.io/blog/2014/01/02/dns-security-colaberative-post/>
+
 **Notes**
 
 [1] - <http://superuser.com/questions/652995/why-does-my-browser-try-to-open-ads-from-fwdsnp-com>
