@@ -5,9 +5,10 @@ excerpt: Get steam working on Ubuntu 12.10 with AMD. No frills just what to do.
 category: blog
 ---
 
-There's a lot of information that comes up when you search for running Steam on Ubuntu. A lot of it is old, doesn't work anymore, or tries to be so generic it covers every case. Well, i'll have none of that. This post works for me, and maybe you, but not for everyone. This should take you 20 min, instead of the 3 hours it took me trying things.
+There's a lot of information that comes up when you search for running Steam on Ubuntu. A lot of it is old, doesn't work anymore, or tries to be so generic it covers every case. Well, I'll have none of that. This post works for me, and maybe you, but not for everyone. This should take you 20 min, instead of the 3 hours it took me trying things.
 
 My setup:
+
 * Ubuntu 12.10 64bit
 * 2x ATI 5830's in CrossFire (should apply to any modern ATI cards)
 
