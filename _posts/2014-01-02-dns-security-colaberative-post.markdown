@@ -66,6 +66,16 @@ DNSCrypt
 OpenWRT <http://wiki.openwrt.org/inbox/dnscrypt>
 
 <hr/>
+DNSCurve
+---
+<http://dnscurve.org/>
+>Confidentiality: DNS requests and responses today are completely unencrypted and are broadcast to any attacker who cares to look. DNSCurve encrypts all DNS packets.
+>
+>Integrity: DNS today uses "UDP source-port randomization" and "TXID randomization" to create some speed bumps for blind attackers, but patient attackers and sniffing attackers can easily forge DNS records. DNSCurve cryptographically authenticates all DNS responses, eliminating forged DNS packets.
+>
+>Availability: DNS today has no protection against denial of service. A sniffing attacker can disable all of your DNS lookups by sending just a few forged packets per second. DNSCurve very quickly recognizes and discards forged packets, so attackers have much more trouble preventing DNS data from getting through. Protection is also needed for SMTP, HTTP, HTTPS, etc., but protecting DNS is the first step.
+
+<hr/>
 Alternative DNS providers
 ---
 <https://developers.google.com/speed/public-dns/>
