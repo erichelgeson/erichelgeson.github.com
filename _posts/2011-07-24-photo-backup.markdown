@@ -20,7 +20,7 @@ I couldn't find a good backup solution (good == free, and no weird archive forma
 Things to note:
 
 * no compression, doing this for speed, not for saving space
-* no parody, if i corrupt a file then it's gone, but tar can recover if just some bits are wrong and only lose part of the files in the archive.
+* no parity, if I corrupt a file then it's gone, but tar can recover if just some bits are wrong and only lose part of the files in the archive.
 * no cryptography, could run it through something
 
 This is one step toward my Idea backup solution:
