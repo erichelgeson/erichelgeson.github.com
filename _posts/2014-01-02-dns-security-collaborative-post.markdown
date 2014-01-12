@@ -1,11 +1,11 @@
 ---
 layout: post
-title: DNS Security Colaberative Post
-excerpt: DNS Security Colaberative Post
+title: DNS Security Collaborative Post
+excerpt: DNS Security Collaborative Post
 disqus: n
 category: blog
 ---
-There was a ton of responses to my blog post about my [ISP's bad behavior with DNS](http://erichelgeson.github.io/blog/2013/12/31/i-fought-my-isps-bad-behavior-and-won/) and I wanted to consolidate the information here. This post is on github so you can [click here](https://github.com/erichelgeson/erichelgeson.github.com/blob/master/_posts/2014-01-02-dns-security-colaberative-post.markdown) to add or edit any info in this post, just a pull request away (just follow the same formatting). I'll be adding more as I parse through all the comments.
+There was a ton of responses to my blog post about my [ISP's bad behavior with DNS](http://erichelgeson.github.io/blog/2013/12/31/i-fought-my-isps-bad-behavior-and-won/) and I wanted to consolidate the information here. This post is on github so you can [click here](https://github.com/erichelgeson/erichelgeson.github.com/blob/master/_posts/2014-01-02-dns-security-collaborative-post.markdown) to add or edit any info in this post, just a pull request away (just follow the same formatting). I'll be adding more as I parse through all the comments.
 <hr/>
 
 Basics of DNS
