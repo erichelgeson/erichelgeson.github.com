@@ -6,7 +6,7 @@ category: blog
 ---
 I recently moved from Apache2 to Nginx as my web server of choice because of its low memory footprint so I can run it on a very small [Digital Ocean](https://www.digitalocean.com/?refcode=ed172ee8d6f0) Droplet (thats a referral link, here's a direct link <https://www.digitalocean.com>)
 
-CloudFlare is a CDN ([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network)) provider and has a free tier, which is great to protect my lttle droplet. And to protect it even more you can white list CloudFlares IP's. 
+CloudFlare is a Content Delivery Network ([CDN](https://en.wikipedia.org/wiki/Content_delivery_network)) provider and has a free tier, which is great to protect my lttle droplet. And to protect it even more you can white list CloudFlares IP's. 
 
 To do this, create a file that allows all of CloudFlare's IPs. You can then include it into your nginx config. If you have multiple sites you can include them in each or globally or per site.
 
