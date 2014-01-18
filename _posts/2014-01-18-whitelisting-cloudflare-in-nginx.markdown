@@ -57,7 +57,8 @@ Thats it, now when access the page via your `direct` hostname, it will give a [4
 
 Alternatively you can use iptables to drop all packets not from CloudFlare <https://support.cloudflare.com/hc/en-us/articles/200169166-How-do-I-whitelist-CloudFlare-s-IP-addresses-in-iptables->
 
-Links:
+### Links:
+
 More info on ngx\_http\_access\_modlue which provides the allow/deny: <http://nginx.org/en/docs/http/ngx_http_access_module.html>
 
 Setting up virtual hosts in nginx: <https://www.digitalocean.com/community/articles/how-to-set-up-nginx-virtual-hosts-server-blocks-on-ubuntu-12-04-lts--3>
