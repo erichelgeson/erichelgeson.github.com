@@ -76,8 +76,11 @@ I sent them a response on Dec 10th 2013 but have yet to hear back:
 >-Eric.
 
 I hope after you read this you'll check your ISP too and see if they are intercepting your traffic. Some tools you can use are:
-<http://broadband.mpi-sws.org/transparency/glasnost.php>
-<https://code.google.com/p/namebench/> (thought CDNs get are sometimes shown as censorship)
+
+* **<http://netalyzr.icsi.berkeley.edu/>**
+* <http://broadband.mpi-sws.org/transparency/glasnost.php>
+* <https://code.google.com/p/namebench/>
+ * (thought CDNs get are sometimes shown as censorship)
 
 This also shows a weakness in DNS. There is currently no way to validate the DNS record you're being served is what the person hosting the website intended. An ISP could hijack all DNS requests to use their servers in which case you could not bypass them. My ISP could easily at their routers reroute all DNS traffic to theirs so I could not bypass them. 
 
