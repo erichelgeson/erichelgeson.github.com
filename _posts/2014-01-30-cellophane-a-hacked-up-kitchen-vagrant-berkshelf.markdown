@@ -49,9 +49,9 @@ BUNDLE_GEMFILE=.kitchen/kitchenw.gemfile "${EMBEDDED_DIR}/bin/bundle" exec kitch
 Now I can just do:
 
 {% highlight bash %}
-./kitchenw converge` # vs vagrant up
-./kitchenw login .`  # vs vagrant ssh
-./kitchenw destroy`  # vs vagrant destroy
+./kitchenw converge # vs vagrant up
+./kitchenw login .  # vs vagrant ssh
+./kitchenw destroy  # vs vagrant destroy
 {% endhighlight %}
 
 Next steps? Make this a real thing? a .bat for Windows? Burn it with fire?
