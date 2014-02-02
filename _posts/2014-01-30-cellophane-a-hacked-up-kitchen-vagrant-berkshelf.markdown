@@ -9,7 +9,7 @@ Since [vagrant-berkshelf is now deprecated](https://sethvargo.com/the-future-of-
 
 Vagrant has an omnibus version of ruby... so why not use a kitchen wrapper (inspired by [gralsw](http://mrhaki.blogspot.com/2013/03/grails-goodness-using-wrapper-for.html)) + bundler + vagrant's embedded ruby to have no external dependencies?
 
-**Caviot: I know this is a horrible way to do it, I just hacked it together this morning.**
+**Caveat: I know this is a horrible way to do it, I just hacked it together this morning.**
 
 Since the vagrant script sets the correct environment I used that as a template.
 
