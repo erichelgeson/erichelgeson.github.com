@@ -1,0 +1,192 @@
+---
+layout: post
+title: OpsWorks
+excerpt: Basics, usage, and testing Amazon OpsWorks
+category: blog
+---
+[OpsWorks](https://aws.amazon.com/opsworks/) is an AWS offering for running and managing AWS EC2 resources with Chef. It lies somewhere between Elastic Beanstalk and hand crafting your own EC2 instances.
+
+When I first started using OpsWorks I had a strong understanding of Chef and a good understanding of AWS. There is defiantly a learning curve to OpsWorks and I wanted to share a few insights that might help you when evaluating OpsWorks.
+
+## What is OpsWorks really?
+
+**TLDR:** OpsWorks is really just a set of Amazon Services and APIs that run Chef-Client in local mode (no chef server) and shares node data with other instances in the stack. It pulls a `chef repo` artifact from S3 or Github (can use [berks](http://berkshelf.com/) to resolve cookbook dependancies) and runs a `run_list` you provide. Thats it at the most basic level.
+
+## OpsWorks basics
+
+I'll briefly go over the basic concepts of OpsWorks and equate them to Chef concepts. Amazons documentation and others have done this before so I encourage you to look at the links at the end of this post for further reading.
+
+### Stack
+
+A stack is all the infrastructure needed to run an Application. It is a logical grouping of AWS resources such as ELBs, RDS, and application servers. A stack contains Layers.
+
+### Layers
+
+A Layer is a grouping of EC2 resources that share a configuration, for example Tomcat servers, or ELBs. Layers in a stack can share configuraiton data with each other. For example you're MySQL RDS layer can share the connection string details and the Tomcat layer can read that in and configure it self.
+
+#### Default Layers
+
+Amazon provides many Default layers to get you going quickly, for example Java, Ruby, PHP, Node, etc. These are very close to PaaS offerings as they provide a way for you to select a `war` file or point to a `git` repo and deploy you're app. These layers are all managed by chef recipes and you can [view the source and even make pull requests](https://github.com/aws/opsworks-cookbooks). You can additionally layer on you're recipes onto these layers.
+
+The downside of this is if you have a very specific need to deploy an app it may not fit into their assumptions about a stack. Thats where Custom Layers come into play.
+
+There are other layers such as RDS and ELB where you can create a new or associate an existing database or load balancer with the Stack. Associating these will inject the details (username, password, ip, port, etc) into the Node data for the stack to use. More on the custom node data below.
+
+#### Custom Layers
+
+Custom layers allow you to spin up an EC2 instance and converge your own recipes.
+
+Layers contain instances.
+
+### Instance
+
+As the name suggests it is an EC2 compute instance that is in a Layer. You can setup scaling and time based instances in the OpsWorks console.
+
+### OpsWorks to Chef
+
+| OpsWorks | Chef        | Notes |
+|----------|-------------|-------|
+| Stack    | Environment | Top level. Encapsulates everything about the application. In OpsWorks there is no overrides or other concepts in a Stack. |
+| Layer    | Roles       | Has a run_list and is a logical set of EC2 resources in the application. |
+| Instance | Node        | Node data is shared via OpsWorks Ohai data instead of a search. |
+
+## Beyond the basics
+Now that we have a basic understanding of how Chef and Amazon OpsWorks work together, lets dig into some more advanced topics.
+
+### Considerations, limitations, and constraints
+There are some limitations that may or may not be deal breakers out of the box:
+
+- Does not run a chef-server so must use the APIs AWS provided, meaning no knife commands or utilities work with OpsWorks.
+- There is no chef daemon running every 30 min. It only runs when you call the API.
+- Does not support encrypted databags, though you can use things like [citadel](https://github.com/poise/citadel) to store encrypted items in S3 and use IAM security to protect them.
+- Does support databags, but differently
+- Does support search, but differently
+- Must use `Amazon` or `Ubuntu` linux. If you use `Centos`, `RHEL`, or `Windows` you're out of luck.
+- EC2 Instances must have internet access.
+- It will ask to create a bunch of Security Groups by default when you create your first stack.
+
+More information and notes here: <http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-chef11-10.html>
+
+### Cookbook Management
+OpsWorks only allows you to specify one recipe per stack. To include multiple cookbooks just create a berksfile that contains all dependancies. Note this could get tricky if you have private repos in the Berksfile.
+
+There are a few options to give OpsWorks custom cookbooks:
+* Give OpsWorks a Git Repo with a deploy key to pull recipes down from.
+* Create a tarball from `berks package` and store that in a S3 bucket or http location.
+
+Remember to checkin the `Berksfile.lock` to avoid unintended updates. Berks is where your constraints are set.
+
+### OpsWorks, node data, and testing
+OpsWorks injects node data about the stack into each instance (node). This includes a bunch of useful information like RDS DNS, username and password, ELBs, other servers in your stack.
+
+To see all node data available for the instance in the stack run: `sudo opsworks-agent-cli get_json`
+
+#### Mocking OpsWorks data for testing
+Testing your custom cookbooks can be tricky though there are a few ways you can approach it.
+
+```
+---
+suites:
+  - name: myapp # Tomcat Layer in OpsWorks
+    run_list: # Mimic run_list in OpsWorks Layer
+      - recipe[myapp::httpd]
+      - recipe[myapp::tomcat]
+      - recipe[myapp::solr]
+    attributes:
+      deploy: # Mimic Hash provided by OpsWorks RDS Layer.
+        myapp:
+          database:
+            host: localhost
+            database: myapp
+            port: 3306
+            username: root
+            password:
+      myapp:
+        local_dev: true
+```
+This will mimicked the hash OpsWorks injects into the node data when you associate a Mysql RDS instance to a Layer in the stack. You can use this  mocked data in test-kitchen to connect to a local Mysql instance the same as you connect to the RDS instance.
+
+I've also included a attribute to see if I'm in test-kitchen or not. This way I can do things only needed when running locally, for example installing Mysql.
+```ruby
+include_recipe 'mysql::server' if node['myapp']['local_dev']
+```
+
+### Lifecycle events
+
+Lifecycle events are triggered when events such as first boot, app deployment and shutdown happen and run a specific `run_list`. This can be confusing to veteran chef users who are used to a `run_list` being the same on the node and converging every 30 minutes or so (except for maybe `first-boot.json`).
+
+A lifecycle event can be run from the API across one or many instances or a whole layer of the stack.
+
+A lifecycle event can have `json` attributes injected into the node attributes via the API or UI when the event is triggered under "Additional Attributes."
+
+#### Setup
+Setup happens when an instance boots. Setup is primarily used like a first boot.
+
+#### Configure
+Configure can be thought of as the "normal" chef run. Ensuring all you're configurations are setup correctly. Though is only run when called via the API, not on a schedule.
+
+#### Deploy
+This runlist can take an artifact location and deploy and configure the application.
+
+#### Shutdown
+These could be used to cleanup any infrastructure or other items.
+
+### Final Thoughts
+OpWorks provides many interesting concepts but is significantly different than using straight chef. The lack of knife tools and the Amazon API makes it feel like a completely different world if you are used to a chef-server.
+
+The community around OpWorks is much smaller than the community around Chef. I have found about three local users and a few remote. The best place to ask questions is on Stack Overflow or Amazon's forums.
+
+All that said, you can setup some pre-built recipes, cloud formations, etc to build a stack for clients very quickly using their AWS resources.
+
+## Bonus
+### Tomcat/Java and OpsWorks
+By default OpsWorks installs OpenJDK. If you need Oracle, download the Linux tarball distribution and use this json to override the install.
+
+* <http://docs.aws.amazon.com/opsworks/latest/userguide/layers-java-config.html>
+* <https://aws.amazon.com/blogs/aws/aws-opsworks-for-java/>
+
+```json
+{
+  "opsworksjava" : {
+    "jvmpkg" : {
+      "usecustompkglocation" : "true",
+      "custompkglocationurl_rhel" : "http://s3.amazonaws.com/your-bucket/jre-7u45-linux-x64.gz"
+    }
+  }
+}
+```
+
+### SSH Keys and OpsWorks
+OpsWorks comes with a recipe to distribute a public key associated with IAM profiles to all of your servers. It will create a user with the IAM name and set the public key. You can even allow sudo or not. This is a much better approch than sharing a private key
+
+<http://docs.aws.amazon.com/opsworks/latest/userguide/security-settingsshkey.html>
+
+### Cloud Formation
+
+OpsWorks does support Cloud formation templates, which makes for some interesting use cases for deploying packages for customers but I have not explored it more than reading the documentation. <http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-stack.html>
+
+## Further Reading
+
+* Run the `update_custom_cookbooks` command on all instances of a stack
+```
+aws --region us-east-1 opsworks create-deployment --stack-id 1c5333a0d-7944-422c-9353-deadbeef0123 --command "{\"Name\":\"update_custom_cookbooks\"}"
+```
+
+* <http://www.slideshare.net/AmazonWebServices/advanced-topics-session-2-introducing-awsopsworks>
+
+* <http://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html>
+
+* <http://docs.aws.amazon.com/cli/latest/reference/opsworks/index.html>
+
+* <https://artsy.github.io/blog/2013/08/27/introduction-to-aws-opsworks/>
+
+* <http://docs.aws.amazon.com/opsworks/latest/userguide/security-settingsshkey.html>
+
+* <http://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-chef11.html>
+
+* <http://blog.originate.com/blog/2014/10/02/how-to-deploy-play-framework-on-aws-opsworks/>
+
+### Local development with OpsWorks
+* <http://pixelcog.com/blog/2014/virtualizing-aws-opsworks-with-vagrant/>
+
+* <https://www.geekandi.com/2014/04/13/amazon-linux-vagrant-box-images/>
