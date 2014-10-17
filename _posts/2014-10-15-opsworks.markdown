@@ -187,6 +187,11 @@ aws --region us-east-1 opsworks create-deployment --stack-id 1c5333a0d-7944-422c
 * <http://blog.originate.com/blog/2014/10/02/how-to-deploy-play-framework-on-aws-opsworks/>
 
 ### Local development with OpsWorks
+
 * <http://pixelcog.com/blog/2014/virtualizing-aws-opsworks-with-vagrant/>
 
 * <https://www.geekandi.com/2014/04/13/amazon-linux-vagrant-box-images/>
+
+### Running Docker on AWS OpsWorks
+
+* <http://blogs.aws.amazon.com/application-management/post/Tx2FPK7NJS5AQC5/Running-Docker-on-AWS-OpsWorks>
