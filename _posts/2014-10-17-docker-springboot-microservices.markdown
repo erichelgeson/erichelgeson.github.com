@@ -114,7 +114,7 @@ The new docker run seems really interesting for production debugging, `docker ru
 
 ## Next steps
 
-I've been playing with Docker on and off since its release and today was the firs time it really clicked and worked for our whole stack and developer workflow. This was about a 1/2 of a day or so to get this up and hopefuly it'll save you some time and give you a few ideas when building your Docker setup.
+I've been playing with Docker on and off since its release and today was the first time it really clicked and worked for our whole stack and developer workflow. This was about a 1/2 of a day or so to get this up and hopefully it'll save you some time and give you a few ideas when building your Docker setup.
 
 I'll be folding this into our CI/CD pipeline and looking at how to integrate a service discovery layer on top. More on that in a later blog post.
 
