@@ -20,10 +20,11 @@ links:
   - name:         RSS
     url:          http://feeds.feedburner.com/EricHelgesonBlog
     external:     true
-pygments:         true
+#pygments:         true
+highlighter:      rouge
 permalink:        pretty
-markdown:         kramdown
-redcarpet:
-  extensions:
-    - smart
-    - tables
+markdown:         redcarpet
+#redcarpet:
+#  extensions:
+#    - smart
+#    - tables
