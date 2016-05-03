@@ -21,9 +21,9 @@ links:
     url:          http://feeds.feedburner.com/EricHelgesonBlog
     external:     true
 #pygments:         true
-highlighter:      rouge
+#highlighter:      rouge
 permalink:        pretty
-markdown:         redcarpet
+#markdown:         redcarpet
 #redcarpet:
 #  extensions:
 #    - smart

@@ -15,7 +15,7 @@ This is another great advantage Grails 3 has - using other tools in a standard w
 
 It's quite easy to apply the codenarc plugin in your `build.gradle`:
 
-```groovy
+``` groovy
 // This is all thats nessisarry if you want to use the default version
 // of codenarc and the `config/codenarc/condenarc.xml`
 apply plugin: 'codenarc'
