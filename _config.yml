@@ -22,7 +22,7 @@ links:
     external:     true
 pygments:         true
 permalink:        pretty
-markdown:         redcarpet
+markdown:         kramdown
 redcarpet:
   extensions:
     - smart
