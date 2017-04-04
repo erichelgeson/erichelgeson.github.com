@@ -11,9 +11,9 @@ If you've purchased previously you can [grab an updated copy.](https://www.grail
 
 If you've not purchased yet get [your copy today!](https://www.grails3book.com/early-access.html)
 
-I've set the final price at $39.99. I've done this by looking at other similar length and depth books. Don't worry, though, the Early Access price will stay until closer to release.
+I've set the final price at $39.99. I've done this by looking at other similar length and depth books. Don't worry, though, the Early Access price will stay until closer to release. No matter what price you purchased the book at you will always receive updates at no cost.
 
-Speaking of releases my goal is to have the book 100% ready by [GR8Conf US 2017](http://gr8conf.us/)! That's just 16 weeks away (may seem long to you, but seems short for me!)
+My goal is to have the book 100% ready by [GR8Conf US 2017](http://gr8conf.us/)! That's just 16 weeks away (may seem long to you, but seems short for me!)
 
 I've also been working on other value added ideas for readers. If you follow me on Twitter you'll see I've been putting out [fresh grails-app version diffs](https://github.com/erichelgeson/grails-versions) when new releases come out, as well as an unofficial release notes (you can see an example from Grails 3.2.8 here https://gist.github.com/erichelgeson/be2f9f62ab63d989f2ec962ae7001f21) I'll continue to do these for the community and see what else I can add for readers.
 
