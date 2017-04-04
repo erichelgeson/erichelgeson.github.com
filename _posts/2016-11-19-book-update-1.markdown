@@ -36,7 +36,9 @@ That said early access is still on track for this December!
 
 ## Up next
 
-I've setup a public [Trello board](https://trello.com/b/IEvaBBBq/progress) if you'd like to track progress. Please note not all tasks are here, but I'll begin posting more.
+~~I've setup a public [Trello board](https://trello.com/b/IEvaBBBq/progress) if you'd like to track progress. Please note not all tasks are here, but I'll begin posting more.~~
+
+Status updates are now tracked on the [feedback issue tracker](https://gitlab.com/grails-3-book/feedback) - easier to have them all in one location!
 
 ## Stats
 
