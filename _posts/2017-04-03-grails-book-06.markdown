@@ -1,0 +1,45 @@
+---
+layout: post
+title: Practical Grails 3 - 0.6 Release
+excerpt: Updates & what's new in the Practical Grails 3 - 0.6 Release
+category: blog
+---
+
+Hello, Everyone! I'm excited to announce the 0.6 release of Practical Grails 3. It took a bit longer to get this release out the door than I'd like. I hope it's worth the wait with tons of great content and feedback from 300+ early access readers, thanks! The response has been so much more than I could have anticipated!
+
+If you've purchased previously you can [grab an updated copy.](https://www.grails3book.com/resend.html)
+
+If you've not purchased yet get [your copy today!](https://www.grails3book.com/early-access.html)
+
+I've set the final price at $39.99. I've done this by looking at other similar length and depth books. Don't worry, though, the Early Access price will stay until closer to release.
+
+Speaking of releases my goal is to have the book 100% ready by [GR8Conf US 2017](http://gr8conf.us/)! That's just 16 weeks away (may seem long to you, but seems short for me!)
+
+I've also been working on other value added ideas for readers. If you follow me on Twitter you'll see I've been putting out [fresh grails-app version diffs](https://github.com/erichelgeson/grails-versions) when new releases come out, as well as an unofficial release notes (you can see an example from Grails 3.2.8 here https://gist.github.com/erichelgeson/be2f9f62ab63d989f2ec962ae7001f21) I'll continue to do these for the community and see what else I can add for readers.
+
+`CHANGELOG` for **0.6**:
+
+* Examples using Grails 3.2.8
+* Added testing section
+* Reworked reactor examples
+* All code now pulled from tests or working app
+* Updated criteria and where queries examples
+* TagLib section
+* Expanded content in views sections
+* Many, many updates and changes based on feedback
+* Example code is now published to [GitLab.com](https://gitlab.com/grails-3-book/)
+* Public feedback has been moved to [GitLab.com](ttps://gitlab.com/grails-3-book/feedback)
+
+**0.7** will be a shorter release cycle than 0.6. And to ensure that I'm limiting the scope. With all the publishing automation done I can focus on content.
+
+* PDF/EPUB formats
+* Authoring Grails Plugins
+* Expand REST API Examples
+* Configuration
+* Public sample chapter (now that there's some well edited sections!)
+
+I've also decided to not update examples to GORM 6.1 until after a few point releases. There's a ton of great new things in there but I may roll that into the Grails 3.3 book update.
+
+You'll note that I've moved to GitLab. It's providing a lot of great features (such as CI, private repos, etc). If you haven't checked them out you should! The example code repos are public to clone or download or you can log in with your Github account on GitLab.
+
+Thanks!
