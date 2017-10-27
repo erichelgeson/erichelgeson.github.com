@@ -13,9 +13,9 @@ If you've not purchased yet get [your copy today!](https://www.grails3book.com/e
 
 A HUGE thank you to the **500+** people who purchased early access!
 
-## `CHANGELOG` for **0.8**:
+## **0.8** `CHANGELOG`:
 
-* Examples using Grails 3.2.11.
+* Examples updated to Grails 3.2.11.
 * Expand REST API Examples.
 * Front-end Framework section.
 * Authoring Grails Plugins example.
