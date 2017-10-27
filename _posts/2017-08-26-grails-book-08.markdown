@@ -31,7 +31,7 @@ The outstanding tasks quite small:
 * Logging
 * Early Access Feedback
 
-I'm pleased 1.0 will be released at the G3 Summit on **November 28th, 2018!**
+I'm pleased to announce that 1.0 will be released at the G3 Summit on **November 28th, 2018!**
 
 ## See you at G3 Summit!
 
@@ -53,8 +53,8 @@ Please note when you purchase Practical Grails 3 you will receive update through
 
 I've been tracking changes to the 3.3.x line though have not updated the book examples yet. The main reason is the build-test-data plugin has not been updated yet to support 3.3.x. We use build-test-data extensively in the examples. Due to this the 1.0 release of the book will be on the latest 3.2.x line.
 
-I am considering moving all build-data related tasks to [dru](https://github.com/agorapulse/dru) and the new trait testing framework. While not as easy
+I am considering moving all build-data related tasks to [dru](https://github.com/agorapulse/dru) and the new trait testing framework. I would love to hear your feedback on this change.
 
-Note: **0.7** release was a silent release June 22nd 2017.
+Note: **0.7** release was a silent release live on the site since June 22nd 2017.
 
 Thanks!
