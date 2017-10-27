@@ -1,0 +1,60 @@
+---
+layout: post
+title: Practical Grails 3 - 0.8 Release
+excerpt: Updates & what's new in the Practical Grails 3 - 0.8 Release & Road to 1.0
+category: blog
+---
+
+Hello, Everyone! I'm excited to announce the `0.8` release of Practical Grails 3!
+
+If you've purchased previously you can [grab an updated copy.](https://www.grails3book.com/resend.html)
+
+If you've not purchased yet get [your copy today!](https://www.grails3book.com/early-access.html)
+
+A HUGE thank you to the **500+** people who purchased early access!
+
+## `CHANGELOG` for **0.8**:
+
+* Examples using Grails 3.2.11.
+* Expand REST API Examples.
+* Front-end Framework section.
+* Authoring Grails Plugins example.
+* Feedback & other minor updates.
+
+## Road to 1.0
+
+The outstanding tasks quite small:
+
+* Editors reviews
+* Multi Tenancy
+* Configuration
+* Logging
+* Early Access Feedback
+
+I'm pleased 1.0 will be released at the G3 Summit on **November 28th, 2018!**
+
+## See you at G3 Summit!
+
+I'll be presenting at the G3 Summit this year in Austin, TX - November 28 - December 1st 2018.
+
+* Better know a Grails Plugin - Thu 7:30 PM
+
+* Automated Strategies for building & deploying Grails with Gradle - Fri 2:45 PM
+
+Talks abstracts are here: https://g3summit.com/conference/austin/2017/11/speakers/eric_helgeson
+
+OCI is offering a $200 discount (ending soon) to G3Summit - https://objectcomputing.com/news/2017/09/08/weve-got-your-200-discount-g3-summit
+
+## A living book
+
+Please note when you purchase Practical Grails 3 you will receive update through the whole life of Grails 3.x. The book will continue to grow with new features and feedback as Grails grows.
+
+## A note on Grails 3.3.x
+
+I've been tracking changes to the 3.3.x line though have not updated the book examples yet. The main reason is the build-test-data plugin has not been updated yet to support 3.3.x. We use build-test-data extensively in the examples. Due to this the 1.0 release of the book will be on the latest 3.2.x line.
+
+I am considering moving all build-data related tasks to [dru](https://github.com/agorapulse/dru) and the new trait testing framework. While not as easy
+
+Note: **0.7** release was a silent release June 22nd 2017.
+
+Thanks!
