@@ -1,0 +1,62 @@
+---
+layout: post
+title: G3 Summit 2017
+excerpt: Notes
+category: blog
+---
+
+First off, thank-you to everyone for speaking, attending, and running the G3 Summit this year!
+
+## Grails Rockstar Award
+
+I was surprised and humbled by receiving the 2017 Grails Rockstar award! It is quite the honor to be recognized for my contributions to the community. It was very unexpected by me!
+
+I talk a bit about the award and Practical Grails 3 on the Groovy Podcast 50 - https://groovypodcast.podbean.com/e/groovy-podcast-ep-50/ - fulfilling a life long dream of being on the Groovy Podcast!
+
+## Groovy
+
+Paul King when through all the new changes happening in Groovy 2.5, 2.6, & 3.0. So much is advancing in Groovy on the way to 3.0.
+
+The biggest thing to note is 2.6 will be a back-port of 3.0 features to JDK7. This seems like a great upgrade approach for users who need to stay on the 2.X line a little while longer. My only concern is the messaging and marketing needs to get out to users - and users outside the community! Was noted Groovy does not have much of a marketing budget, so we as a community need to help get the word out there. I do hope OCI will put a few $$ in promotion.
+
+Groovy podcast 50.5 Paul and Ken Kousen discuss it all in depth, check it out https://groovypodcast.podbean.com/e/groovy-podcast-ep-50-12/
+
+## Grails 3
+
+Talking to Graeme and team about whats new - GORM Services, GraphQL, modularization (and a ton more) was great. 3.3.x is rock solid.
+
+## Grails 4
+
+We have a sneak peak in to what Grails 4 will be:
+
+* Groovy 3
+* Spring 5, Spring-Boot 2
+* GORM 7
+* Hibernate 5.2
+* Java 8/9
+
+We can expect to see something on this later in 2018 as these dependancies are released.
+
+## My talks
+
+I gave two talks this year at G3 Summit. I'll be posting the s
+
+* Automated Strategies for building & deploying Grails with Gradle
+
+This is an update on a talk I'd previously given at GR8Conf US. It was well attended and great audience participation - I had a lot of fun dong it!
+
+Slides: https://gingkoapp.com/automation-strategies-for-deploying-grails-from-dev-to-prod
+
+* Better know a Grails Plugin
+
+A new talk about where to find all the great plugins in Grails, Gradle, Spring Boot, etc - just visiting the plugin portal isn't enough to get the most of of your Grails app.
+
+Slides: https://gingkoapp.com/better-know-a-grails-plugin
+
+## Practical Grails 3
+
+I released the 1.0 of Practical Grails 3 yesterday as well, go grab your updated copy at https://www.grails3book.community
+
+## Community
+
+It was great to hangout and talk to everyone, get insights, ask questions, or bug about issues - thanks! [Graeme](https://twitter.com/graemerocher), [Jeff](https://twitter.com/jeffscottbrown), [Paul](https://twitter.com/paulk_asert), [Dave](https://twitter.com/davydotcom), [James](https://twitter.com/Schlogen), [Giri](https://twitter.com/gpottepalem), [Ryan](https://twitter.com/RyanVanderwerf), [Zack](https://twitter.com/ZacharyAKlein), [Tucker](https://twitter.com/virtualdogbert), [Ken](https://twitter.com/kenkousen), and many more!
