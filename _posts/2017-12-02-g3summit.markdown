@@ -39,7 +39,7 @@ We can expect to see something on this later in 2018 as these dependancies are r
 
 ## My talks
 
-I gave two talks this year at G3 Summit. I'll be posting the s
+I gave two talks this year at G3 Summit.
 
 * Automated Strategies for building & deploying Grails with Gradle
 
