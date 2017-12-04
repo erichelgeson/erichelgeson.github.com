@@ -55,7 +55,7 @@ Slides: https://gingkoapp.com/better-know-a-grails-plugin
 
 ## Practical Grails 3
 
-I released the 1.0 of Practical Grails 3 yesterday as well, go grab your updated copy at https://www.grails3book.com
+I released the [1.0 of Practical Grails 3](https://erichelgeson.github.io/blog/2017/12/01/grails-book-release/) yesterday as well, go grab your updated copy at https://www.grails3book.com
 
 ## Community
 
