@@ -18,7 +18,7 @@ Posted as part of [#MARCHintosh](https://marchintosh.com/)
 
 Contains bug fixes, Drag 'N' Drop, and Sound Manager. Should be installed alongside any 7.1 install.
 
-https://macintoshgarden.org/apps/macintosh-os-71x#System_Update_3.0
+<https://macintoshgarden.org/apps/macintosh-os-71x#System_Update_3.0>
 
 ## Modern networking
 
@@ -31,43 +31,43 @@ https://macintoshgarden.org/apps/open-transport-131-update-open-transport-13-68k
 
 Allows you to run applications that utilize threading.
 
-https://macintoshgarden.org/apps/thread-manager
+<https://macintoshgarden.org/apps/thread-manager>
 
 ## Clock in menu bar
 
 Super Clock was actually purchased by apple and included in later releases, but you can grab it and add it to 7.1
 
-https://macintoshgarden.org/apps/superclock-404
+<https://macintoshgarden.org/apps/superclock-404>
 
 ## Read PC/DOS disks
 
 Need the ability to read and write PC disks? No problem, you can install PC Exchange in 7.1.
 
-https://macintoshgarden.org/apps/pc-exchange
+<https://macintoshgarden.org/apps/pc-exchange>
 
 ## 2020 Date Fix
 
 Apple never thought people would still be using their macs in the year 2020 – but you can still have an accurate date with this extension.
 
-https://mactcp.net/macos2020.html 
+<https://mactcp.net/macos2020.html>
 
 ## Appearance Manager
 
 Appearance Manager allows you to use themes such as the Platinum Appearance in 7.1 Some later apps may need Appearance Manager to run as well.
 
-https://macintoshgarden.org/apps/appearance-manager-mac-os-7x 
+<https://macintoshgarden.org/apps/appearance-manager-mac-os-7x>
 
 ## Other nice to haves for System 7.1
 
-* System picker makes it easy to switch boot folders – because you might still want to boot into System 6. System Folders easily https://macintoshgarden.org/apps/system-picker 
+* System picker makes it easy to switch boot folders – because you might still want to boot into System 6. System Folders live on the same drive, just rename one. <https://macintoshgarden.org/apps/system-picker>
 
-* Take Screen Shots Easily with Capture - https://macintoshgarden.org/apps/capture-402 
+* Take Screen Shots Easily with Capture - <https://macintoshgarden.org/apps/capture-402>
 
-* Have an Apple Extended Keyboard - https://macintoshgarden.org/apps/forward-delete-113 
+* Have an Apple Extended Keyboard - <https://macintoshgarden.org/apps/forward-delete-113>
 
-* Norton Disk Activity is handy if you use a SD drive solution since you won’t be able to hear the activity anymore https://macintoshgarden.org/apps/norton-utilities-353 
+* Norton Disk Activity is handy if you use a SD drive solution since you won’t be able to hear the activity anymore <https://macintoshgarden.org/apps/norton-utilities-353>
 
-* Lost the resource fork when copying files? Use Snitch to change them back https://macintoshgarden.org/apps/snitch 
+* Lost the resource fork when copying files? Use Snitch to change them back <https://macintoshgarden.org/apps/snitch>
 
 ## Conclusion
 
