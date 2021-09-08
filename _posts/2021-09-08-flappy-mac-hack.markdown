@@ -18,7 +18,7 @@ Poking around any classic Mac program you start up ResEdit and poke around to se
 
 Once you open Flappy Mac in ResEdit you’re greeted with a list of resources - things that make up dialogs, windows, game data, and code for the game. The trick here is to find the resource that stored the score. I played till I got a score of 6 and started looking for a 6 somewhere in there...
 
-The `DATA` forks are the most likely places for this to be stored, but it could be obfuscated or stored in some odd encoding. Luckily it was quite easy to spoint `SDAT` (Save Data?) and I put the hex equivalent of 100 (`0x0064`) and low and behold I had a score of 100!
+The `DATA` forks are the most likely places for this to be stored, but it could be obfuscated or stored in some odd encoding. Luckily it was quite easy to spot `SDAT` (Save Data?) and I put the hex equivalent of 100 (`0x0064`) and low and behold I had a score of 100!
 
 <img alt="Flappy Mac ResEdit score to 100!" src="/static/images/flappy_mac_resedit_edit.png">
 <small><i>Flappy Mac ResEdit score to 100!</i></small>
