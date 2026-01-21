@@ -2,7 +2,7 @@ title:            Eric Helgeson
 description:      A blog by Eric.
 url:              http://erichelgeson.github.io
 signoff:          -Eric
-disqus_shortname: erichelgesonblog # disqus comment thread for post header options. ( leave blank if unwanted. )
+# disqus_shortname: erichelgesonblog # disabled - no comments in 2026
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
 google_analytics: UA-37860645-1 # set tracking, remove from /javascripts/basic.js if unwanted.
 exclude: ["node_modules", "Gemfile*", "package.json", "README.md", "run", "yarn.lock", "*.log", "gulp*", "vendor"]
