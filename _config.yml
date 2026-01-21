@@ -1,6 +1,6 @@
 title:            Eric Helgeson
 description:      A blog by Eric.
-url:              http://erichelgeson.github.io
+url:              https://erichelgeson.github.io
 signoff:          -Eric
 # disqus_shortname: erichelgesonblog # disabled - no comments in 2026
 facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
@@ -18,8 +18,7 @@ links:
     url:          http://github.com/erichelgeson
     external:     true
   - name:         RSS
-    url:          http://feeds.feedburner.com/EricHelgesonBlog
-    external:     true
+    url:          /atom.xml
 #pygments:         true
 #highlighter:      rouge
 permalink:        pretty
