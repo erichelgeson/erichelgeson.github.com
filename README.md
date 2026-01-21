@@ -1,30 +1,53 @@
-Scribble
-========
+Eric Helgeson's Blog
+====================
 
-A jekyll theme. [Want a demo? click and read instruction. :point_left:](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
-<br />
-[More themes](https://github.com/muan/muan.github.com/releases).
-
-![screenshot](http://scribble.muan.co/images/screenshot.png)
-
-There is no clever design philosophy to talk about, I tried to find something to work with, and 'scribble' came to my mind. 
-
-This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript, though .scss & .coffee files wouldn't be included in the theme. 
-
-The theme is mobile optimised but I did not check browser compatibility. It looks great in Chrome, Safari and Firefox though.
+A Jekyll blog based on the Scribble theme.
 
 ---
 
-### Get started
+## Development
 
-1. [Fork the repository](https://github.com/muan/scribble/fork).
-2. Clone the repository to your computer.<br /> `git clone https://github.com/username/scribble`
-3. `bundle install`
-4. **Using older versions of Jekyll**<br />
-  Build and run jekyll using `jekyll --server --auto`.<br />
-  **Using [Jekyll 1.0](http://blog.parkermoore.de/2013/05/06/jekyll-1-dot-0-released/)**<br />
-  Build Jekyll using `jekyll build`.<br />
-  Then run Jekyll using `jekyll serve --watch`, go to http://localhost:4000 for your site.
+This project uses a Nix flake for reproducible development environments.
+
+### Prerequisites
+
+- [Nix](https://nixos.org/download.html) with flakes enabled
+- [direnv](https://direnv.net/) (optional, but recommended)
+
+### Quick Start
+
+**With direnv (recommended):**
+```bash
+direnv allow    # First time only - loads environment automatically
+bundle install  # Install Ruby dependencies
+bundle exec jekyll serve --watch
+```
+
+**Without direnv:**
+```bash
+nix develop                          # Enter dev shell
+bundle install                       # Install Ruby dependencies
+bundle exec jekyll serve --watch     # Start dev server
+```
+
+Then visit http://localhost:4000
+
+### Build Commands
+
+```bash
+bundle exec jekyll build    # Build the site to _site/
+nix build                   # Build via Nix (output in ./result)
+```
+
+---
+
+## Theme: Scribble
+
+[Want a demo? click and read instruction.](http://scribble.muan.co/2013/05/06/scribble-the-jekyll-theme/)
+
+![screenshot](http://scribble.muan.co/images/screenshot.png)
+
+This theme uses Open Sans powered by Google Web Fonts, and was written in plain HTML, SCSS & CoffeeScript.
 
 ---
 
