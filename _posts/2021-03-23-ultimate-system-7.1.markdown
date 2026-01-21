@@ -10,7 +10,7 @@ category: blog
 
 Macintosh System 7.1.x was a lean and versatile system back in the day. It runs on the Mac Plus to early PowerPC’s. It's low memory footprint and ability to run almost all System 7 software make it a great choice for your vintage Mac. 
 
-In this post I’ll show you how to customize your 7.1 install to run anything System 7.6.1 could software – and even look like MacOS 8 if you so choose.
+In this post I'll show you how to customize your 7.1 install to run anything System 7.6.1 software could – and even look like MacOS 8 if you so choose.
 
 Posted as part of [#MARCHintosh](https://marchintosh.com/)
 

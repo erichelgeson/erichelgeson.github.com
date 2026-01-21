@@ -28,7 +28,7 @@ I've also been working on other value added ideas for readers. If you follow me 
 * Expanded content in views sections
 * Many, many updates and changes based on feedback
 * Example code is now published to [GitLab.com](https://gitlab.com/grails-3-book/)
-* Public feedback has been moved to [GitLab.com](ttps://gitlab.com/grails-3-book/feedback)
+* Public feedback has been moved to [GitLab.com](https://gitlab.com/grails-3-book/feedback)
 
 **0.7** will be a shorter release cycle than 0.6. And to ensure that I'm limiting the scope. With all the publishing automation done I can focus on content.
 

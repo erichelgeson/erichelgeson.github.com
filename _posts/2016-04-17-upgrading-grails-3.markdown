@@ -9,7 +9,7 @@ We set out to upgrade [Sproutary.com](https://sproutary.com/?ref=blog) - online
 
 The approach we took was to start a `grails3` branch early and attempt an upgrade, knowing there would be bugs and issues we could report back to Grails. We would deploy it when it's ready. There was no rush to upgrade as Grails 2.5.x is still being released with bug fixes.
 
-This post is me going the past 7 months of the `grails3` branch and giving you my perspective on the upgrade. Hopefully this insight will help you when trying to upgrade.
+This post is me going over the past 7 months of the `grails3` branch and giving you my perspective on the upgrade. Hopefully this insight will help you when trying to upgrade.
 
 #### TLDR
 

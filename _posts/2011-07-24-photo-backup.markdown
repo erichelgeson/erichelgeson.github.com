@@ -23,7 +23,7 @@ Things to note:
 * no parity, if I corrupt a file then it's gone, but tar can recover if just some bits are wrong and only lose part of the files in the archive.
 * no cryptography, could run it through something
 
-This is one step toward my Idea backup solution:
+This is one step toward my ideal backup solution:
 
 3 Copies -
 

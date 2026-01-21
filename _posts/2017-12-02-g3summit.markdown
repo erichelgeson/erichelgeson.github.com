@@ -43,7 +43,7 @@ I gave two talks this year at G3 Summit.
 
 * Automated Strategies for building & deploying Grails with Gradle
 
-This is an update on a talk I'd previously given at GR8Conf US. It was well attended and great audience participation - I had a lot of fun dong it!
+This is an update on a talk I'd previously given at GR8Conf US. It was well attended and great audience participation - I had a lot of fun doing it!
 
 Slides: https://gingkoapp.com/automation-strategies-for-deploying-grails-from-dev-to-prod
 

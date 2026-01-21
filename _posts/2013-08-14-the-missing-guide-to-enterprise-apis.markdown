@@ -11,15 +11,15 @@ Though I've never seen tips, tricks or tutorials on how to deal with these real 
 
 **Strip all but the headers needed when sending a request to a backend.**
 
-You're likely facading one or many systems that can range from a decent REST service to POX with different layers in between. Some may barf at a cookie or a header they werent expecting. Its better to explicitly strip them out.
+You're likely facading one or many systems that can range from a decent REST service to POX with different layers in between. Some may barf at a cookie or a header they weren't expecting. Its better to explicitly strip them out.
 
 **Cache keys are hard, and your API probably doesn't generate them well**
 
-API platforms usually have a cache layer, are likely not just a plain old http cache, but more of an application layer cache. If your caching just on get parameters youll do silly things like cache compressed responses and serve them to people who are not expecting them (Accept-Encoding) or if you use the Accept header for format, youll serve json to someone wanting xml.
+API platforms usually have a cache layer, are likely not just a plain old http cache, but more of an application layer cache. If your caching just on get parameters you'll do silly things like cache compressed responses and serve them to people who are not expecting them (Accept-Encoding) or if you use the Accept header for format, you'll serve json to someone wanting xml.
 
-**Backend systems change, and they dont tell you**
+**Backend systems change, and they don't tell you**
 
-These services were built way before people thought about web APIs. Yep, you got this beautiful service that is version 1, everything is fine then boom, the backend changes the POX service and requires a new field that won't fit into your new contract, and didnt tell anyone till you're all on a bridge because the service is failing. Unfortunately the only mitigation is Enterprise change management (threw up in my mouth a little typing that).
+These services were built way before people thought about web APIs. Yep, you got this beautiful service that is version 1, everything is fine then boom, the backend changes the POX service and requires a new field that won't fit into your new contract, and didn't tell anyone till you're all on a bridge because the service is failing. Unfortunately the only mitigation is Enterprise change management (threw up in my mouth a little typing that).
 
 **Mashup of mashups of mashups**
 

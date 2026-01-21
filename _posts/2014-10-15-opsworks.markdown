@@ -6,7 +6,7 @@ category: blog
 ---
 [OpsWorks](https://aws.amazon.com/opsworks/) is an AWS offering for running and managing AWS EC2 resources with Chef. It lies somewhere between Elastic Beanstalk and hand crafting your own EC2 instances.
 
-When I first started using OpsWorks I had a strong understanding of Chef and a good understanding of AWS. There is defiantly a learning curve to OpsWorks and I wanted to share a few insights that might help you when evaluating OpsWorks.
+When I first started using OpsWorks I had a strong understanding of Chef and a good understanding of AWS. There is definitely a learning curve to OpsWorks and I wanted to share a few insights that might help you when evaluating OpsWorks.
 
 ## What is OpsWorks really?
 
@@ -22,11 +22,11 @@ A stack is all the infrastructure needed to run an Application. It is a logical 
 
 ### Layers
 
-A Layer is a grouping of EC2 resources that share a configuration, for example Tomcat servers, or ELBs. Layers in a stack can share configuraiton data with each other. For example you're MySQL RDS layer can share the connection string details and the Tomcat layer can read that in and configure it self.
+A Layer is a grouping of EC2 resources that share a configuration, for example Tomcat servers, or ELBs. Layers in a stack can share configuration data with each other. For example you're MySQL RDS layer can share the connection string details and the Tomcat layer can read that in and configure it self.
 
 #### Default Layers
 
-Amazon provides many Default layers to get you going quickly, for example Java, Ruby, PHP, Node, etc. These are very close to PaaS offerings as they provide a way for you to select a `war` file or point to a `git` repo and deploy you're app. These layers are all managed by chef recipes and you can [view the source and even make pull requests](https://github.com/aws/opsworks-cookbooks). You can additionally layer on you're recipes onto these layers.
+Amazon provides many Default layers to get you going quickly, for example Java, Ruby, PHP, Node, etc. These are very close to PaaS offerings as they provide a way for you to select a `war` file or point to a `git` repo and deploy your app. These layers are all managed by chef recipes and you can [view the source and even make pull requests](https://github.com/aws/opsworks-cookbooks). You can additionally layer on you're recipes onto these layers.
 
 The downside of this is if you have a very specific need to deploy an app it may not fit into their assumptions about a stack. Thats where Custom Layers come into play.
 

@@ -41,7 +41,7 @@ DNSSEC currently does not have widespread adoption and solves only that the reco
 
 **Questions**
 
-* If DNSSEC validation fails, is the end user show a warning like SSL?
+* If DNSSEC validation fails, is the end user shown a warning like SSL?
  * Chrome (but doesn't seem to work) <https://chrome.google.com/webstore/detail/dnssec-validator/hpmbmjbcmglolhjdcbicfdhmgmcoeknm?hl=en>
  * Firefox <https://os3sec.org/>
 

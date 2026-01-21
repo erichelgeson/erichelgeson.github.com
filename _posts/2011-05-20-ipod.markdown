@@ -1,9 +1,9 @@
 ---
 layout: post
 title: iPod
-excerpt: Sold my iPod touch on Amazon, so I went into recovery to wipe it, and this is what i got (it was jail broken ;)
+excerpt: Sold my iPod touch on Amazon, so I went into recovery to wipe it, and this is what I got (it was jail broken ;)
 category: blog
 ---
 <img id="resedit" src="/static/images/ipodtouch.jpg">
 
-Sold my iPod touch on Amazon, so I went into recovery to wipe it, and this is what i got (it was jail broken ;)
+Sold my iPod touch on Amazon, so I went into recovery to wipe it, and this is what I got (it was jail broken ;)

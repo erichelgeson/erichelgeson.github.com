@@ -97,7 +97,7 @@ COPY target/myapp-oauth.jar /opt/myapp-oauth.jar
 CMD java -jar /opt/myapp-oauth.jar
 ```
 
-I have run fatjars in production with other frameworks, it is most defiantly my favorite way to run Java+Tomcat!
+I have run fatjars in production with other frameworks, it is most definitely my favorite way to run Java+Tomcat!
 
 ## Configuration
 

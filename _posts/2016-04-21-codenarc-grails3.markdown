@@ -7,7 +7,7 @@ category: blog
 
 [Codenarc](http://codenarc.sourceforge.net/) is a code analysis tool to help you avoid simple mistakes in your groovy and Grails code.
 
-In Grails 2 there is a [codenarc plugin](https://grails.org/plugin/codenarc) available. Since Grails 3 uses `gradle` for it's build tool we can take advantage of [gradle plugins](https://plugins.gradle.org/) - no need for a Grails 3 specific codenarc plugin since gralde has one.
+In Grails 2 there is a [codenarc plugin](https://grails.org/plugin/codenarc) available. Since Grails 3 uses `gradle` for it's build tool we can take advantage of [gradle plugins](https://plugins.gradle.org/) - no need for a Grails 3 specific codenarc plugin since gradle has one.
 
 This is another great advantage Grails 3 has - using other tools in a standard way greatly expands whats possible with Grails without the need for custom plugins or solutions.
 
@@ -16,7 +16,7 @@ This is another great advantage Grails 3 has - using other tools in a standard w
 It's quite easy to apply the codenarc plugin in your `build.gradle`:
 
 ``` groovy
-// This is all thats nessisarry if you want to use the default version
+// This is all that's necessary if you want to use the default version
 // of codenarc and the `config/codenarc/condenarc.xml`
 apply plugin: 'codenarc'
 
@@ -26,7 +26,7 @@ codenarc {
 }
 ```
 
-Codenarc need to know what rules to apply to your project.
+Codenarc needs to know what rules to apply to your project.
 
 Here you can set what rules you'd like to include or exclude:
 

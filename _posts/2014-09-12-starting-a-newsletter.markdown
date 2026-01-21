@@ -10,7 +10,7 @@ Back in January 2014 I started the newsletter [UsingChef](http://usingchef.com/?
 ### Finding your niche
 This was easy for me, and I think if you're trying too hard you don't have a niche yet. You likely use a product, programming language, or utility every day that others use too. If people start looking to you and asking you questions on how to use it, thats a great idea to start a newsletter.
 
-Time commitment is another thing to consider. Before I started automating many of the things below it could take me between 1.5 to 2 hours of time every Sunday. I usually did this while the kids were napping or playing, but you need to commit to this each week. Durring the last few weeks I've actually gone to bi-weekly to spend more time with my family. (Good thing I didn't call it Chef-Weekly :)
+Time commitment is another thing to consider. Before I started automating many of the things below it could take me between 1.5 to 2 hours of time every Sunday. I usually did this while the kids were napping or playing, but you need to commit to this each week. During the last few weeks I've actually gone to bi-weekly to spend more time with my family. (Good thing I didn't call it Chef-Weekly :)
 
 ## Getting and automating content
 Most of my content comes from Blogs and Twitter. I use Feedly to categorize blogs and favor content I want to mark for inclusion. On Twitter I favorite posts. Really keep it simple.
@@ -37,9 +37,9 @@ For Feedly, I do not have a paid account right now so I Tweet the entry, usually
 I've also started to get into some newsletter optimization. What happens if I send on a Monday morning instead of Sunday afternoon? Do I get more opens? (yes!) Mailchimp again has some premium features to help with this type of testing, but I haven't played with them yet.
 
 ### Blog
-In addition to a newsletter I setup an accompanying blog to post. Use what you know. I've setup a few [Jekyll](http://jekyllrb.com/) sites before so I created another one. I found a CC theme that looked good and customized it from there. The hardest thing was integrating the CSS from the mailchip button to look the way I wanted it to.
+In addition to a newsletter I setup an accompanying blog to post. Use what you know. I've setup a few [Jekyll](http://jekyllrb.com/) sites before so I created another one. I found a CC theme that looked good and customized it from there. The hardest thing was integrating the CSS from the mailchimp button to look the way I wanted it to.
 
-I use the blog to write and format the comment. Much of my time in the beginning was spent fixing markdown formatting and missing quotation marks and ensuring there were 4 spaces instead of 2 or a tab.
+I use the blog to write and format the content. Much of my time in the beginning was spent fixing markdown formatting and missing quotation marks and ensuring there were 4 spaces instead of 2 or a tab.
 
 To address this I started using Jekyll includes for [articles](https://github.com/usingchef/usingchef/blob/master/_includes/article.html) and [releases](https://github.com/usingchef/usingchef/blob/master/_includes/release.html) so I can pass in the content and the include does the formatting. I didn't start this until newsletter #13, I really should have sooner.
 
@@ -75,8 +75,8 @@ I have not done any advertising to date. There are nominal costs to running it (
 
 Write about what you're doing every ~6-8 months. You'll learn a lot and it's fun to share.
 
-Automated early and often save yourself time and frustration in the future.
+Automate early and often save yourself time and frustration in the future.
 
 So are you thinking about starting your own newsletter? Do it! There's a lot of resources out there to get started. Share what you know with others. Have questions for me? Reach out, I'd be happy to chat.
 
-Oh, and if your a Chef user or interested in Chef, checkout [UsingChef.com](http://usingchef.com/?ref=ericblog) and sign up!
+Oh, and if you're a Chef user or interested in Chef, checkout [UsingChef.com](http://usingchef.com/?ref=ericblog) and sign up!

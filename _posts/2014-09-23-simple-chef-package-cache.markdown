@@ -4,7 +4,7 @@ title: Simple Chef Package Cache for Kitchen
 excerpt: Simple Chef Package Cache for Kitchen
 category: blog
 ---
-There is many times you have limited or slow internet access, but still need to converge a machine. And each converge it downloads and installs the Chef-Client which can take quite a while. Here's a hacky way to share you're `/tmp/kitchen/cache/` dir with the host machine to reduce download times in you're converge.
+There is many times you have limited or slow internet access, but still need to converge a machine. And each converge it downloads and installs the Chef-Client which can take quite a while. Here's a hacky way to share your `/tmp/kitchen/cache/` dir with the host machine to reduce download times in your converge.
 
 `kitchen.local.yml` -
 

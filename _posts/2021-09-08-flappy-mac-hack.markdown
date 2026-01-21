@@ -11,7 +11,7 @@ I am a horrible Flappy player, but an avid tinkerer. I decided to poke around an
 
 ## Finding the Score
 
-Poking around any classic Mac program you start up ResEdit and poke around to see what you can find. I wrote about some fond memories back in 2011 - ["cracking" the Decent app](/blog/2011/05/23/resedit/) so I didn’t need to use the original CD and could listen to some Weezer or NIN instead. 
+Poking around any classic Mac program you start up ResEdit and poke around to see what you can find. I wrote about some fond memories back in 2011 - ["cracking" the Descent app](/blog/2011/05/23/resedit/) so I didn’t need to use the original CD and could listen to some Weezer or NIN instead. 
 
 <img alt="Flappy Mac opened in ResEdit." src="/static/images/flappy_mac_resedit.png">
 <small><i>Flappy Mac opened in ResEdit.</i></small>

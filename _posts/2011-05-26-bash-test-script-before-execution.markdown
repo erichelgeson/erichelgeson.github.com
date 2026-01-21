@@ -30,4 +30,4 @@ $ for i in {1..10}; do for n in {1..10}; do echo 'mkdir -p $i/$n'; done ; done |
 $
 {% endhighlight %}
 
-Volla! You've just created 100 dirs.
+Voilà! You've just created 100 dirs.
